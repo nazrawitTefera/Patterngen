@@ -21,7 +21,7 @@ public class Pattern{
     //pre condition- the rows have to be greater than zero
     //postconditin- prints a triangle formed numbers 
     public static void triangle(int rows) {
-    int row = 1;  // start with row 1
+    int row = 1;  
 
     while (row <= rows) {           
         int count = 1;              
@@ -36,6 +36,8 @@ public class Pattern{
     }
 }
     public static void main(String[] args) {
-        stars(5);// precondition and post condition
+        stars(5);
+        System.out.println();
+        triangle(9);
     }
 }
