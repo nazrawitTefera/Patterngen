@@ -44,11 +44,47 @@ public class Pattern{
             }
             System.out.println();}
         }
-    
+    //pre-maxE > 0
+    //post- prints letters in sideways triangle
     public static void eo(int maxE){
-        for(int letter=6; letter>=1;){
-
+        for(int letter=1; letter<=maxE; letter++){
+            for(int count=1;count<=letter;count++){
+                if (letter % 2 == 0) {
+                System.out.print("E");
+            } else {
+                System.out.print("O");
+            }
         }
+        System.out.println();
+
+
+    }
+        for(int letter=maxE-1; letter>=1;letter--){
+            for(int count = 1;count <= letter; count++){
+                if(letter%2==0){
+                    System.out.print("E");
+                }else{
+                    System.out.print("O");
+                }
+            }
+            System.out.println();}
+
+    }
+    public static void pyramid(int rows) {
+    for (int row = 1; row <= rows; row++) {
+        // Print leading spaces
+        for (int space = 1; space < row; space++) {
+            System.out.print(" ");
+        }
+        // Print numbers
+        for (int num = 1; num <= (2 * (rows - row) + 1); num++) {
+            System.out.print(row);
+        }
+        System.out.println(); // Move to next line
+    }
+
+    
+
     }
 
 
@@ -61,6 +97,10 @@ public class Pattern{
         triangle(9);
         System.out.println();
         odds(9);
+        System.out.println();
+        eo(6);
+        System.out.println();
+        pyramid(5);
 
     }
     }
