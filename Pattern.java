@@ -16,6 +16,7 @@ public class Pattern{
             System.out.println();
             row++ ;
             stars+=2 ;
+            
         }
     }
     //pre condition- the rows have to be greater than zero
@@ -32,12 +33,34 @@ public class Pattern{
         }
 
         System.out.println();       
-        row++;                      
+        row++;}                      
     }
-}
+    //pre-condition- start has to be an odd number greater than 0
+    //post-condition- print an inverted triangle from 9
+    public static void odds(int start){
+        for(int num=start ;num>=1;num-=2){
+            for(int count=1;count <= num;count++){
+                System.out.print(num);
+            }
+            System.out.println();}
+        }
+    
+    public static void eo(int maxE){
+        for(int letter=6; letter>=1;){
+
+        }
+    }
+
+
+
+
+
     public static void main(String[] args) {
         stars(5);
         System.out.println();
         triangle(9);
+        System.out.println();
+        odds(9);
+
     }
-}
+    }
